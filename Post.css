@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: Arial;
+}
+
+.container-fluid {
+    background: url(new-tech.png);
+    /*    background-size: 100% 100%;*/
+    background-size: cover;
+    /*    min-height: 100vh;*/
+    padding: 0 !important;
+}
+
+.row1 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.Task {
+    width: 1088px;
+    height: 1059px;
+    border: 7px solid #6A7792;
+    background-color: #959595;
+    opacity: .5;
+    border-radius: 33px;
+    color: #1E1E1E;
+
+}
+
+.w-50 label {
+    color: #1E1E1E;
+}
+
+
+.footer {
+    border: 3px solid #6C7B93;
+    border-radius: 27px;
+}
+
+.footer1 {
+    height: 230px;
+    width: 324px;
+}
+
+p {
+    color: #707070;
+    font-size: 20px;
+    font-family: Helvetica Neue;
+}
+
+
+
+.footer ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+.footer ul li a {
+    text-decoration: none;
+
+}
+
+.footer ul li a img {
+    padding: auto 6px;
+    height: 35px;
+}
+
+@media only screen and (max-width: 814.6px) {
+    .footer ul {
+
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 667.6px) {
+    h1 {
+        font-size: 30px !important;
+    }
+    .footer ul li {
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+    }
+
+    .left {
+        float: left;
+        clear: both;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .footer1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .right {
+        float: right;
+    }
+
+    div.row.w-100.py-4 {
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+    }
+
+    .w-100 {
+        width: 100% !important;
+    }
+
+    form.p-5 {
+        padding-top: 2px !important;
+    }
+
+    div.w-100.px-3.py-4 {
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+    }
+    div.w-50.px-3.py-4 {
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+    }
+
+    div.pt-5.d-flex.justify-content-around {
+        padding-top: 20px !important;
+        flex-wrap: wrap !important;
+    }
+}
+
+@media only screen and (max-width: 511.6px) {
+    h1 {
+        font-size: 24px !important;
+    }
+    .accountInformation {
+        width: 360px;
+    }
+
+    div.row.row1.p-5 {
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+    }
+
+    form.p-5 {
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+    }
+
+}
+
+@media only screen and (max-width: 376.6px) {
+    .footer ul li {
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+    }
+
+    .left {
+        float: left;
+        clear: both;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .footer1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .footer ul li a img {
+        height: 20px;
+    }
+}

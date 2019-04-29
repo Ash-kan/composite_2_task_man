@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: Arial;
+}
+
+.container-fluid {
+    background: url(99fd2231282db627038a6d6432691d82.png);
+    /*    background-size: 100% 100%;*/
+    background-size: cover;
+    /*    min-height: 100vh;*/
+    padding: 0 !important;
+}
+
+.row1 {
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+.login {
+    width: 720px;
+    height: 636px;
+    background-color: #A5BAC9;
+    opacity: .5;
+    border: 7px solid #003764;
+    border-radius: 24px;
+}
+
+.footer {
+    border: 3px solid #6C7B93;
+    border-radius: 27px;
+}
+
+.footer1 {
+    height: 230px;
+    width: 324px;
+}
+
+p {
+    color: #707070;
+    font-size: 20px;
+    font-family: Helvetica Neue;
+}
+
+
+
+.footer ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+.footer ul li a {
+    text-decoration: none;
+
+}
+
+.footer ul li a img {
+    padding: auto 6px;
+    height: 35px;
+}
+
+@media only screen and (max-width: 814.6px) {
+    .footer ul {
+
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 667.6px) {
+    .footer ul li {
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+    }
+
+    .left {
+        float: left;
+        clear: both;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .footer1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .right {
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 376.6px) {
+    .footer ul li {
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+    }
+
+    .left {
+        float: left;
+        clear: both;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .footer1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .footer ul li a img {
+        height: 20px;
+    }
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="moment.js"></script>
+    
+    <!--    fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+    <title>Login1</title>
+    <link rel="stylesheet" type="text/css" href="Listing.css">
+    
+
+</head>
+
+<body onload="initialLoad()">
+
+    <div class="container-fluid">
+        <div class="logo">
+            <img src="Untitled-2.png" alt="Logo" height="90px" class="pt-4 pl-5">
+            <div id="userLoginDetails" class="mail">
+                
+            </div>
+            
+        </div>
+        <div class="border">
+            <img src="Rectangle%2084.png" alt="rectangle" height="48px" width="100%" class="">
+            <div class="plus">
+                <img id="addPost" src="Group27.png" alt="">
+            </div>
+        </div>
+
+        <div class="row row1 p-5">
+            <div class="mx-auto d-flex">
+                <div class="px-5 py-1">
+                    <button id="editAccount" class="btn btn-small btn-primary badge-pill">My Acc</button>
+                </div>
+                <div class="px-5 py-1">
+                    <button id="logout" class="btn btn-small btn-primary badge-pill">Logout</button>
+                </div>
+                <div id="testing"></div>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="mx-auto">
+                <select id="selectField"> 
+                    <option>
+                        <h1 value="January" class="text-center bg-white" style="width: 178px;">January</h1>
+                    </option>
+                    <option>
+                        <h1 value="Feburary" class="text-center bg-white" style="width: 178px;">Feburary</h1>
+                    </option>
+                    <option>
+                        <h1 value="March" class="text-center bg-white" style="width: 178px;">March</h1>
+                    </option>
+                    <option>
+                        <h1 value="April" class="text-center bg-white" style="width: 178px;">April</h1>
+                    </option>
+                    <option>
+                        <h1 value="May" class="text-center bg-white" style="width: 178px;">May</h1>
+                    </option>
+                    <option>
+                        <h1 value="June" class="text-center bg-white" style="width: 178px;">June</h1>
+                    </option>
+                    <option>
+                        <h1 value="July" class="text-center bg-white" style="width: 178px;">July</h1>
+                    </option>
+                    <option>
+                        <h1 value="August" class="text-center bg-white" style="width: 178px;">August</h1>
+                    </option>
+                    <option>
+                        <h1 value="September" class="text-center bg-white" style="width: 178px;">September</h1>
+                    </option>
+                    <option>
+                        <h1 value="October" class="text-center bg-white" style="width: 178px;">October</h1>
+                    </option>
+                    <option>
+                        <h1 value="November" class="text-center bg-white" style="width: 178px;">November</h1>
+                    </option>
+                    <option>
+                        <h1 value="December" class="text-center bg-white" style="width: 178px;">December</h1>
+                    </option>
+                </select>
+            </div>
+
+        </div>
+        
+        
+        
+        <div id="January" class="calender text-center hide">
+            <div class="row nowrap w-100 text-center">
+                <div class="day">S</div>
+                <div class="day">M</div>
+                <div class="day">T</div>
+                <div class="day">W</div>
+                <div class="day">T</div>
+                <div class="day">F</div>
+                <div class="day">S</div>
+            </div>
+            <div id="tableDays">
+                <div class="row nowrap w-100">
+                    <div class="date mx-">30</div>
+                    <div class="date mx-2">31</div>
+                    <div class="date mx-2">1</div>
+                    <div class="date mx-2">2</div>
+                    <div class="date mx-2">3</div>
+                    <div class="date mx-2">4</div>
+                    <div class="date mx-">5</div>
+                </div>
+                <div class="row nowrap w-100 list">
+                    <div class="dateL mx-"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-"></div>
+                </div>
+                <div class="row nowrap w-100 text-center">
+                    <div class="dateF">6</div>
+                    <div class="dateF ">7</div>
+                    <div class="dateF ">8</div>
+                    <div class="dateF ">9</div>
+                    <div class="dateF ">10</div>
+                    <div class="dateF ">11</div>
+                    <div class="dateF">12</div>
+                </div>
+                <div class="row nowrap w-100 list">
+                    <div class="dateL mx-"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-"></div>
+                </div>
+                <div class="row nowrap w-100 text-center">
+                    <div class="dateF">13</div>
+                    <div class="dateF ">14</div>
+                    <div class="dateF ">15</div>
+                    <div class="dateF ">16</div>
+                    <div class="dateF ">17</div>
+                    <div class="dateF ">18</div>
+                    <div class="dateF">19</div>
+                </div>
+                <div class="row nowrap w-100 list">
+                    <div class="dateL mx-"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-"></div>
+                </div>
+                <div class="row nowrap w-100 text-center">
+                    <div class="dateF">20</div>
+                    <div class="dateF ">21</div>
+                    <div class="dateF ">22</div>
+                    <div class="dateF ">23</div>
+                    <div class="dateF ">24</div>
+                    <div class="dateF ">25</div>
+                    <div class="dateF">26</div>
+                </div>
+                <div class="row nowrap w-100 list">
+                    <div class="dateL mx-"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-"></div>
+                </div>
+                <div class="row nowrap w-100 text-center">
+                    <div class="dateF">27</div>
+                    <div class="dateF">28</div>
+                    <div class="dateF">29</div>
+                    <div class="dateF">30</div>
+                    <div class="dateF">31</div>
+                    
+                </div>
+                <div class="row nowrap list">
+                    <div class="dateL mx-"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-2"></div>
+                    <div class="dateL mx-"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer bg-dark p-3">
+            <div class="row">
+                <div class="footer1 right">
+                    <p class="px-2">Copyright © 2019 by Ashkan Shokri All rights reserved. This website or any portion thereof may not be reproduced or used in any manner whatsoever without the express written permission of the publisher except for the use of brief quotations in a book review</p>
+                </div>
+                <div class="ml-auto left pr-4">
+                    <ul>
+                        <li class="px-2"><a href="#"><img src="Untitled-2.png" alt="" height=""></a></li>
+                        <li class="px-2"><a href="#"><img src="Group%2020.png" alt="" width=""></a></li>
+                        <li class="px-2"><a href="#"><img src="Group%2019.png" alt="" width=""></a></li>
+                        <li class="px-2"><a href="#"><img src="Group%2018.png" alt="" width=""></a></li>
+                        <li class="px-2"><a href="#"><img src="Group%2016.png" alt="" width=""></a></li>
+                        <li class="px-2"><a href="#"><img src="Group%2015.png" alt="" width=""></a></li>
+                    </ul>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
